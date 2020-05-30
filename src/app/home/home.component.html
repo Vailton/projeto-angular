@@ -1,3 +1,10 @@
-<h2 class="titulo" Noticias></h2>
+<h2 class="titulo">Noticias></h2>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tenetur molestiae velit obcaecati autem accusantium mollitia unde optio iusto perferendis fugit, ipsa inventore. Harum est vero ea quas maiores iure!</p>
+<p *ngIf="mostarP1">{{textoP1}}</p>
+
+<p>segundo paragrafo</p>
+
+<ul>
+    <li *ngFor="let itemAtual of itens"></li>
+    {{itemAtual}}
+</ul>
